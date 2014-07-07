@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/cellulartabLayout">
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:padding="5dip">
+
+		<TextView
+		    android:padding="5dip"
+		    android:text="Cellular Network infos" />
+
+		<TableRow android:background="#222222">
+			<TextView android:text="Service State" android:padding="2dip"/>
+			<TextView android:id="@+id/myservicestate" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Country" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetcountry" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Operator" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetoperator" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Network Type" android:padding="2dip"/>
+			<TextView android:id="@+id/mynettype" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Data State" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetdatastate" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Data Activity" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetdataactivity" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Call State" android:padding="2dip"/>
+			<TextView android:id="@+id/mycallstate" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		
+		<TableRow android:background="#222222">
+			<TextView android:text="MCC" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetmcc" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="MNC" android:padding="2dip"/>
+			<TextView android:id="@+id/mynetmnc" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="LAC" android:padding="2dip"/>
+			<TextView android:id="@+id/mylac" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="CID" android:padding="2dip"/>
+			<TextView android:id="@+id/mycid" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		
+		<TableRow android:background="#222222">
+			<TextView android:text="Gmaps location" android:padding="2dip"/>
+			<TextView android:id="@+id/mygmapsloc" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		
+		<TableRow android:background="#222222">
+			<TextView android:text="RSSI (ASU/dBm)" android:padding="2dip"/>
+			<TextView android:id="@+id/cellsignalstrength_Asu_dBm" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="BER" android:padding="2dip"/>
+			<TextView android:id="@+id/cellbiterrorrate" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Neighbors (cur/tot)" android:padding="2dip"/>
+			<TextView android:id="@+id/celln_neighbors" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TextView android:background="#000000" android:id="@+id/cellneighbors" android:padding="2dip"/>
+		<TextView	android:text="Device/SIM infos" android:padding="2dip"/>
+		<TableRow android:background="#222222">
+			<TextView	android:text="Phone type"	android:padding="2dip"/>
+			<TextView	android:id="@+id/myphonetype"	android:text="NA"	android:gravity="right"	android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView	android:text="IMEI/MEID" android:padding="2dip"/>
+			<TextView	android:id="@+id/myphoneid"	android:text="NA"	android:gravity="right"	android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="SIM State" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_state" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="SIM SN" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_sn" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="IMSI" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_subid" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="MSISDN" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_msisdn" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Country" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_country" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="Operator" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_operator" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="MCC" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_mcc" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="MNC" android:padding="2dip"/>
+			<TextView android:id="@+id/sim_mnc" android:text="NA" android:gravity="right" android:padding="2dip"/>
+		</TableRow>
+	</TableLayout>
+</ScrollView>

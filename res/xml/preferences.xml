@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="mobilitylogger_preferences">
+	<PreferenceCategory android:title="Additional log content">
+		<CheckBoxPreference android:key="rssi_logging"
+			android:summary="Log also signal strength from current cell. SCREEN ALWAYS ON"
+			android:title="Log RSSI"
+			android:defaultValue="true" 
+		/>
+		<CheckBoxPreference android:key="neighbors_logging"
+			android:summary="Log also neighboring cells and their signal strengths. SCREEN ALWAYS ON"
+			android:title="Log neighboring cells"
+			android:defaultValue="false" 
+		/>
+		<CheckBoxPreference android:key="wifi_logging"
+			android:summary="Log also wifi access points and signal strengths"
+			android:title="Log Wifi hotspots"
+			android:defaultValue="false" 
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Logging preferences">
+		<CheckBoxPreference android:key="kml_export"
+			android:summary="Save kml track in addition to the csv logs (for easy view on Google Earth)"
+			android:title="Export as KML"
+			android:defaultValue="false" 
+		/>
+		<CheckBoxPreference android:key="continuous_wifi_scanning"
+			android:summary="Continuously scan for hotspots. Use it only if required (battery drains)"
+			android:title="Continuous Wifi scanning"
+			android:defaultValue="false" 
+		/>
+		<CheckBoxPreference android:key="cellid_logging"
+			android:summary="Log a datapoint at each cell change even if GPS location is not available"
+			android:title="Cell Change logging"
+			android:defaultValue="true" 
+		/>
+		
+		<EditTextPreference android:key="update_interval"
+			android:title="Logging interval (seconds)" 
+			android:summary="Use 0 to log at each GPS change notification"
+			android:dialogTitle="Time in seconds"
+			android:numeric="integer" android:maxLength="4"
+			android:hint="Enter seconds (max 9999)" 
+		/>
+		<EditTextPreference android:key="update_interval_seconds"
+			android:title="GPS minimum interval (seconds)" 
+			android:summary="Use 0 for maximum frequency"
+			android:dialogTitle="Time in seconds"
+			android:numeric="integer" android:maxLength="4"
+			android:hint="Enter seconds (max 9999)" 
+		/>
+		<EditTextPreference android:key="update_interval_meters"
+			android:title="GPS minimum interval (meters)"
+			android:summary="Use 0 for maximum frequency"
+			android:dialogTitle="Distance in meters"
+			android:numeric="integer" android:maxLength="4"
+			android:hint="Enter meters (max 9999)" 
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="System Settings">
+		<PreferenceScreen android:title="Enable/Disable GPS"
+			android:summary="Go to the phone settings to enable or disable GPS.">
+			<intent android:action="android.settings.LOCATION_SOURCE_SETTINGS"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:title="2G/3G settings"
+			android:summary="Go to the phone settings to change network preferences.">
+			<intent android:action="android.settings.WIRELESS_SETTINGS"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:title="WiFi settings"
+			android:summary="Go to the phone settings to change WiFi preferences.">
+			<intent android:action="android.settings.WIFI_SETTINGS"/>
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

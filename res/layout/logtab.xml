@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/logtabLayout">
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+		<TableRow android:background="#222222">
+			<TextView android:text="Log RSSI values" android:padding="3dip"/>
+			<TextView android:id="@+id/rssi_logging" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Log neighboring cells" android:padding="3dip"/>
+			<TextView android:id="@+id/neighbors_logging" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Log WiFi Hotspots" android:padding="3dip"/>
+			<TextView android:id="@+id/wifi_logging" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Continuous Wifi Scanning" android:padding="3dip"/>
+			<TextView android:id="@+id/continuous_wifi_scanning" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Log cell changes if no GPS" android:padding="3dip"/>
+			<TextView android:id="@+id/cellid_logging" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Log interval (s)" android:padding="3dip"/>
+			<TextView android:id="@+id/update_interval" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="GPS min interval (s)" android:padding="3dip"/>
+			<TextView android:id="@+id/update_interval_seconds" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="GPS min interval (m)" android:padding="3dip"/>
+			<TextView android:id="@+id/update_interval_meters" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TextView android:background="#000000" android:padding="2dip"/>
+		<TableRow android:background="#222222">
+			<TextView android:text="Export as..." android:padding="3dip"/>
+			<TextView android:id="@+id/export_as" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Logging since" android:padding="3dip"/>
+			<TextView android:id="@+id/loggingSince" android:text="" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+<!-- 		<TableRow android:background="#222222"> -->
+<!-- 			<TextView android:text="Log entries" android:padding="3dip"/> -->
+<!-- 			<TextView android:id="@+id/n_datapoints" android:text="" android:gravity="right" android:padding="3dip"/> -->
+<!-- 		</TableRow> -->
+	</TableLayout>      
+</ScrollView>

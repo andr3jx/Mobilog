@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Mobilog</string>
+	<string name="txt_welcomemessage"><small>This application shows and logs cellular network details provided by the Android API. 
+		\n\nBy pressing the Start button, the app begins to log all available information into a file on the sd-card. 
+		\n\nYou can decide to export to one or both following formats: 
+		\n\n1) <i>CSV</i> file,
+		\n2) <i>KML</i> file (Google Earth placemarks and tracks).
+		\n\nUse the <i><b>settings</b></i> menu to choose logging intervals, and other options. In addition you can decide to
+		include to each tracked position also information about available WiFi networks.
+		\n\n<b>IMPORTANT NOTE</b>:\nIn order to log signal strengths, the screen must remain on.
+		If you switch it off (e.g. by pressing the power button) the signal strengths will not be updated anymore.
+		I am sorry but this is the way android works.
+		\n\nEnjoy!\n\n<i>DanVal\n</i></small></string>
+	<string name="txt_enablegpsmessage">If you proceed without GPS, only cell changes will be logged (KML output and SatelliteTime will be deactivated) </string>
+	<string name="txt_enablewifimessage">Please enable WiFi in the phone settings or disable wifi logging in the application preferences.</string>
+	<string name="txt_nosdcardmessage">Please ensure that your external storage is mounted and writeable.</string>
+</resources>

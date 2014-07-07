@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/gpstabLayout">
+	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+		<TableRow android:background="#222222">
+			<TextView android:text="Local Time" android:padding="3dip"/>
+			<TextView android:id="@+id/mylocaltimestamp" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+	    		<TableRow android:background="#222222">
+			<TextView android:text="GPS Time" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpstimestamp" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="Latitude" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpslatitude" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Longitude" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpslongitude" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Altitude" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpsaltitude" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Speed" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpsspeed" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="Bearing" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpsdirection" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+		<TableRow android:background="#222222">
+			<TextView android:text="GPS Accuracy" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpsaccuracy" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+				<TableRow android:background="#222222">
+			<TextView android:text="N. satellites" android:padding="3dip"/>
+			<TextView android:id="@+id/mygpssatellites" android:text="NA" android:gravity="right" android:padding="3dip"/>
+		</TableRow>
+			</TableLayout>      
+</ScrollView>
